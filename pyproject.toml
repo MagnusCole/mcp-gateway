@@ -12,7 +12,7 @@ requires-python = ">=3.10"
 authors = [
     { name = "ALPHA", email = "ngluis.2701@gmail.com" },
 ]
-keywords = ["mcp", "gateway", "claude", "ai", "tools"]
+keywords = ["mcp", "gateway", "claude", "ai", "tools", "model-context-protocol", "llm", "mcp-server", "proxy", "ai-tools", "plugin"]
 classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Developers",
@@ -22,6 +22,8 @@ classifiers = [
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
     "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Application Frameworks",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
 ]
 dependencies = [
     "mcp>=1.0.0",
@@ -37,6 +39,8 @@ mcp-gateway = "mcp_gateway.cli:main"
 Homepage = "https://github.com/MagnusCole/mcp-gateway"
 Repository = "https://github.com/MagnusCole/mcp-gateway"
 Issues = "https://github.com/MagnusCole/mcp-gateway/issues"
+Documentation = "https://github.com/MagnusCole/mcp-gateway#readme"
+Changelog = "https://github.com/MagnusCole/mcp-gateway/releases"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/mcp_gateway"]

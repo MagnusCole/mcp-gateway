@@ -1,5 +1,9 @@
 # mcp-gateway
 
+[![PyPI](https://img.shields.io/pypi/v/mcp-unify)](https://pypi.org/project/mcp-unify/)
+[![License](https://img.shields.io/github/license/MagnusCole/mcp-gateway)](LICENSE)
+[![Python](https://img.shields.io/pypi/pyversions/mcp-unify)](https://pypi.org/project/mcp-unify/)
+
 Unify multiple MCP servers behind a single endpoint. Lazy loading, auto-cleanup, Python plugins, role-based filtering.
 
 ## The Problem
