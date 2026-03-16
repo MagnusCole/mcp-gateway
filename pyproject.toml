@@ -1,0 +1,42 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mcp-gateway"
+version = "0.1.0"
+description = "Unify multiple MCP servers behind a single endpoint with lazy loading, plugins, and role filtering."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+authors = [
+    { name = "ALPHA", email = "ngluis.2701@gmail.com" },
+]
+keywords = ["mcp", "gateway", "claude", "ai", "tools"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries",
+]
+dependencies = [
+    "mcp>=1.0.0",
+    "starlette>=0.27.0",
+    "uvicorn>=0.23.0",
+    "pyyaml>=6.0",
+]
+
+[project.scripts]
+mcp-gateway = "mcp_gateway.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/MagnusCole/mcp-gateway"
+Repository = "https://github.com/MagnusCole/mcp-gateway"
+Issues = "https://github.com/MagnusCole/mcp-gateway/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/mcp_gateway"]
